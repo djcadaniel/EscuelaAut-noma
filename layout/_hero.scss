@@ -1,0 +1,28 @@
+.main {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1366px;
+}
+
+.main__hero {
+    height: calc(100vh - 110px);
+    width: 100%;
+    min-width: 290px;
+}
+
+/*====SPLIDE====*/
+.splide {
+    // height: 100vh;
+}
+
+.splide__track {
+    // height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: calc(100vh - 110px);
+    object-fit: cover;
+}
