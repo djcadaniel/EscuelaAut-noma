@@ -1,11 +1,10 @@
 .header {
     @include flex-fila;
+    @include anchoDisplay;
     justify-content: space-between;
     align-items: center;
     height: 110px;
     width: 100%;
-    min-width: 320px;
-    max-width: 1366px;
     margin: 0 auto;
     padding: 5px 20px;
     color: $white;

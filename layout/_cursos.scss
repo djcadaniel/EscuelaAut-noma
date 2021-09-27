@@ -1,0 +1,53 @@
+.cursos {
+    @include flex-fila;
+    width: 100%;
+    min-width: 290px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: green;
+}
+
+.cursos__left {
+    width: 50%;
+    padding: 0 5%;
+}
+
+.cursos__left--title {
+    text-align: center;
+}
+
+.cursos__contain {
+    list-style: none;
+}
+
+.cursos__contain--item {
+    margin-bottom: 5%;
+}
+
+.cursos__contain--item a {
+    display: block;
+    padding: 3%;
+    border-radius: 15px;
+    text-decoration: none;
+    color: $black;
+    background-color: $red;
+    transition: all .5s;
+}
+
+.cursos__contain--item a:hover {
+    background-color: $white;
+}
+
+.cursos__details {
+    width: 44%;
+    height: 80vh;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 10px;
+    background-color: $red;
+}
+
+.cursos__details--title {
+    text-align: center;
+
+}

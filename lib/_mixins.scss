@@ -14,3 +14,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin anchoDisplay() {
+    max-width: 2560px;
+    min-width: 320px;
+    margin: 0 auto;
+}

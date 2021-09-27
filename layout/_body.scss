@@ -11,16 +11,9 @@ html {
 }
 
 body {
-    max-width: 1500px;
+    width: 100%;
     margin: 0 auto;
     font-size: 1.6rem;
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     color: $black;
-}
-
-.container {
-    max-width: 1366px;
-    min-width: 320px;
-    margin: 0 auto;
-    border: 1px solid green;
 }
