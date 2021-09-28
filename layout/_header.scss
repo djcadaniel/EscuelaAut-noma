@@ -1,6 +1,7 @@
 .header {
     @include flex-fila;
     @include anchoDisplay;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     height: 110px;
@@ -9,6 +10,7 @@
     padding: 5px 20px;
     color: $white;
     background-color: $white;
+    z-index: $menu;
 }
 
 .header__logo {

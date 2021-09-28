@@ -1,109 +1,182 @@
 .cursos {
     @include flex-fila;
+    align-items: flex-start;
     width: 100%;
     min-width: 290px;
     margin: 0 auto;
     height: 100vh;
-    background-color: green;
+    background-color: $black;
 }
 
 .cursos__left {
+    position: relative;
     width: 50%;
+    height: 100vh;
     padding: 0 5%;
+    background-color: skyblue;
 }
 
 .cursos__left--title {
     text-align: center;
+    font-size: 3rem;
 }
 
 .cursos__contain {
-    list-style: none;
+    @include flex-col;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
 }
 
-.cursos__contain--item {
-    margin-bottom: 5%;
-}
-
-.cursos__contain--item1 a {
+.cursos__contain button {
     display: block;
     padding: 3%;
+    width: 70%;
     border-radius: 15px;
+    border: none;
     text-decoration: none;
     color: $black;
     background-color: $red;
     transition: all .5s;
-}
-
-.cursos__contain--item2 a {
-    display: block;
-    padding: 3%;
-    border-radius: 15px;
-    text-decoration: none;
-    color: $black;
-    background-color: $red;
-    transition: all .5s;
-}
-
-.cursos__contain--item3 a {
-    display: block;
-    padding: 3%;
-    border-radius: 15px;
-    text-decoration: none;
-    color: $black;
-    background-color: $red;
-    transition: all .5s;
-}
-
-.cursos__contain--item4 a {
-    display: block;
-    padding: 3%;
-    border-radius: 15px;
-    text-decoration: none;
-    color: $black;
-    background-color: $red;
-    transition: all .5s;
-}
-
-.cursos__contain--item5 a {
-    display: block;
-    padding: 3%;
-    border-radius: 15px;
-    text-decoration: none;
-    color: $black;
-    background-color: $red;
-    transition: all .5s;
-}
-
-.cursos__contain--item a:hover {
-    background-color: $white;
+    cursor: pointer;
+    font-size: 1.6rem;
 }
 
 .cursos__details {
     position: relative;
-    width: 44%;
-    height: 80vh;
-    padding: 2%;
-    margin: 2%;
+    width: 50%;
+    height: 100vh;
     border-radius: 10px;
     background-color: $red;
 }
 
 .cursos__details--title {
     text-align: center;
-
+    font-size: 3rem;
 }
 
 .curso__details--text {
     position: absolute;
     bottom: 6%;
-    top: 19%;
-    left: -510%;
+    top: 10%;
+    left: 5%;
     width: 90%;
     padding: 2%;
     border-radius: 10px;
+    color: black;
     background-color: $white;
 }
 
-.visibleDetails {
-    left: 0%;
+.borrarCurso {
+    color: red;
+    display: none;
+}
+
+.addCurso {
+    display: block;
+}
+
+.bloque {
+    @include flex-fila;
+    align-items: flex-start;
+    height: 85%;
+    width: 90%;
+    font-size: 1.6rem;
+    background-color: green;
+}
+
+@media only screen and(max-width:964px) {
+    .cursos {
+        position: relative;
+        height: auto;
+    }
+
+    .cursos__left {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .cursos__contain button {
+        display: block;
+        padding: 3%;
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: $black;
+        background-color: $red;
+        transition: all .5s;
+        cursor: pointer;
+    }
+
+    .cursos__contain {
+        width: 100%;
+        height: auto;
+    }
+
+    .cursos__details {
+        position: absolute;
+        transform: translateY(-95%) scaleY(0);
+        transition: 1s;
+    }
+
+    .cursos__contain--item1:hover~.cursos__details {
+        transform: translateY(0) scaleY(1);
+    }
+
+    .m1 {
+        display: block;
+        left: 5%;
+    }
+
+    .m2 {
+        display: block;
+        left: 5%;
+    }
+
+    .m3 {
+        display: block;
+        left: 5%;
+    }
+
+    .m4 {
+        display: block;
+        left: 5%;
+    }
+
+    .m5 {
+        display: block;
+        left: 5%;
+    }
+
+    .m6 {
+        display: block;
+        left: 5%;
+    }
+
+    .m7 {
+        display: block;
+        left: 5%;
+    }
+
+    .m8 {
+        display: block;
+        left: 5%;
+    }
+
+    .m9 {
+        display: block;
+        left: 5%;
+    }
+
+    .m10 {
+        display: block;
+        left: 5%;
+    }
+
+    .cursos__details--btn {
+        display: block;
+    }
+
 }
