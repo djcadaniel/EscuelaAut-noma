@@ -46,7 +46,6 @@
     width: 50%;
     height: 100vh;
     border-radius: 10px;
-    
 }
 
 .cursos__details--title {
@@ -66,6 +65,12 @@
     background-color: $white;
 }
 
+.cursos__details--img {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+}
+
 .borrarCurso {
     color: red;
     display: none;
@@ -83,10 +88,12 @@
     font-size: 1.6rem;
     background-color: $fondoEspecializacion;
 }
-.submenu-btn{
+
+.submenu-btn {
     display: none;
 }
-.submenu{
+
+.submenu {
     display: none;
 }
 
@@ -124,10 +131,11 @@
         display: none;
     }
 
-    .submenu-btn{
+    .submenu-btn {
         display: block;
     }
-    .submenu{
+
+    .submenu {
         display: block;
         height: 0;
         overflow: hidden;

@@ -23,7 +23,7 @@ for(let i=0; i<subMenuBtn.length;i++){
 const cursos = [
     {
         id:1,
-        title:'title1',
+        title:'Administración de Empresas',
         contenido:'parrafo1'
     },
     {

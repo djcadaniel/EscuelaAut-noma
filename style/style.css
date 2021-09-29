@@ -39,6 +39,7 @@ body {
   min-width: 320px;
   margin: 0 auto;
   position: fixed;
+  top: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -46,7 +47,7 @@ body {
   height: 110px;
   width: 100%;
   margin: 0 auto;
-  padding: 5px 20px;
+  padding: 0 20px;
   color: #f4f5ea;
   background-color: #f4f5ea;
   z-index: 9;
@@ -190,11 +191,11 @@ body {
   min-width: 320px;
   margin: 0 auto;
   width: 100%;
-  margin: 0 auto 0 auto;
+  margin: 110px auto 0 auto;
 }
 
 .main__hero {
-  height: 100vh;
+  height: calc(100vh - 110px);
   width: 100%;
   min-width: 290px;
   margin: 0 auto;
@@ -209,11 +210,32 @@ body {
 
 .splide__slide img {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 110px);
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media only screen and (max-width: 960px) {
+  .main {
+    margin: 80px auto 0 auto;
+  }
+
+  .main__hero {
+    height: calc(100vh - 80px);
+  }
+
+  .splide__slide img {
+    width: 100%;
+    height: calc(100vh - 80px);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .splide__slide img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
 .alcance {
   display: -ms-grid;
   display: grid;
@@ -229,12 +251,10 @@ body {
   color: #f4f5ea;
   background-color: #3d313b;
 }
-
 .alcance > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-
 .alcance > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -398,6 +418,12 @@ body {
   border-radius: 10px;
   color: black;
   background-color: #f4f5ea;
+}
+
+.cursos__details--img {
+  position: absolute;
+  top: 55%;
+  left: 30%;
 }
 
 .borrarCurso {
