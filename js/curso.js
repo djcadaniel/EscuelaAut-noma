@@ -23,53 +23,112 @@ for(let i=0; i<subMenuBtn.length;i++){
 const cursos = [
     {
         id:1,
-        title:'Administración de Empresas',
-        contenido:'parrafo1'
+        title:'<br> Administración y Alta Dirección General<br>',
+        contenido:`
+        1. Administración de empresas <br>
+        2. Administración de pequeñas empresas <br>
+        3. Administración estratégica <br>
+        4. Alta dirección empresarial <br>
+        5. Asistencia de gerencia <br>
+        6. Gerencia de producción. <br>
+        7. Gerencia del desarrollo organizacional<br>
+        `
     },
     {
         id:2,
-        title:'title2',
-        contenido:'parrafo2'
+        title:'<br>Agricultura<br>',
+        contenido:`
+        1. Cultivo de Flores y plantas ornamentales<br>
+        2. Manejo integrado de control de plagas <br>
+        3. Reforestación y agroforestería <br>
+        4. Técnicas de explotación agrícola <br>
+        5. Técnicas de jardinería <br>
+        6. Control del plagas <br>
+        7. Avicultura<br>
+        `
     },
     {
         id:3,
-        title:'title3',
-        contenido:'parrafo3'
+        title:'<br>Alimentos<br>',
+        contenido:`
+        1. Control de calidad <br>
+        2. Tecnología de añimentos <br>
+        3. Inocuidad alimentaria <br>
+        4. Industria manufacturera <br>
+        5. Nutrición <br>
+        6. Toxicología de alimentos <br>
+        `
     },
     {
         id:4,
-        title:'title4',
-        contenido:'parrafo4'
+        title:'<br>Archivo y Biblioteconomía<br>',
+        contenido:`
+        1. Administración de archivos <br>
+        2. Administración de bibliotecas <br>
+        3. Gerencia bibliotecaria <br>
+        4. Gerencia de bibliotecas <br>
+        5. Archivo clínico <br>
+        6. Gestión documental<br>
+        7. Tecnología de archivos<br>
+        `
     },
     {
         id:5,
-        title:'title5',
-        contenido:'parrafo5'
+        title:'<br> Patrimonios Cultural<br>',
+        contenido:`
+        1. Gestión de Museos <br>
+        2. Arqueología y patrimonio <br>
+        3. Gestión de patrimonio arqueológico <br>
+        4. Gestión del patrimonio cultural<br>
+        5. Museología<br>
+        `
     },
     {
         id:6,
-        title:'title6',
-        contenido:'parrafo6'
+        title:'<br>Asuntos penitenciarios<br>',
+        contenido:`
+        1. Beneficios penitenciarios <br>
+        2. Gerencia de establecimientos penitenciarios <br>
+        3. Salud mental en establecimientos penitenciarios <br>
+        4. Salud física en establecimientos penitenciarios <br>
+        5. Seguridad en Salud mental en establecimientos penitenciarios <br>
+        6. Seguridad penitenciaria<br>
+        `
     },
     {
         id:7,
-        title:'title7',
-        contenido:'parrafo7'
+        title:'<br>Docencia<br>',
+        contenido:`
+        1. Auxiliar en educación inicial <br>
+        2. Auxiliar en educación primaria <br>
+        3. Auxiliar en educación secundaria <br>
+        4. Docencia en educación inicial<br>
+        5. Docencia en educación primaria <br>
+        6. Docencia en educación secundaria <br>
+        7. Educación por el arte <br>
+        8. Y más <br>
+        `
     },
     {
         id:8,
-        title:'title8',
-        contenido:'parrafo8'
+        title:'<br>Estimulación temprana<br>',
+        contenido:`
+        1. Estimulación del bebé antes de nacer <br>
+        2. Estimulación del bebé intraútero <br>
+        3. Estimulación prenatal <br>
+        `
     },
     {
         id:9,
-        title:'title9',
-        contenido:'parrafo9'
-    },
-    {
-        id:10,
-        title:'title10',
-        contenido:'parrafo10'
+        title:'<br>Sistemas de Información<br>',
+        contenido:`
+        1. Administración de sistemas informáticos <br>
+        2. Gerencia de sistemas informáticos <br>
+        3. Informática y microcomputación <br>
+        4. Ingeniería de sistemas <br>
+        5. Ofimática <br>
+        6. Sistemas de informacoón gerencial <br>
+        `
     }
 ]
 contedorInfo.innerHTML = `${cursos[0].title} <br> ${cursos[0].contenido}`
