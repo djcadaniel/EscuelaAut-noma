@@ -5,7 +5,7 @@
     min-width: 290px;
     margin: 0 auto;
     height: 100vh;
-    background-color: $black;
+    background-color: $white;
 }
 
 .cursos__left {
@@ -13,7 +13,6 @@
     width: 50%;
     height: 100vh;
     padding: 0 5%;
-    background-color: skyblue;
 }
 
 .cursos__left--title {
@@ -35,7 +34,7 @@
     border-radius: 15px;
     border: none;
     text-decoration: none;
-    color: $black;
+    color: $white;
     background-color: $red;
     transition: all .5s;
     cursor: pointer;
@@ -47,7 +46,7 @@
     width: 50%;
     height: 100vh;
     border-radius: 10px;
-    background-color: $red;
+    
 }
 
 .cursos__details--title {
@@ -82,7 +81,13 @@
     height: 85%;
     width: 90%;
     font-size: 1.6rem;
-    background-color: green;
+    background-color: $fondoEspecializacion;
+}
+.submenu-btn{
+    display: none;
+}
+.submenu{
+    display: none;
 }
 
 @media only screen and(max-width:964px) {
@@ -116,67 +121,17 @@
     }
 
     .cursos__details {
-        position: absolute;
-        transform: translateY(-95%) scaleY(0);
-        transition: 1s;
+        display: none;
     }
 
-    .cursos__contain--item1:hover~.cursos__details {
-        transform: translateY(0) scaleY(1);
-    }
-
-    .m1 {
-        display: block;
-        left: 5%;
-    }
-
-    .m2 {
-        display: block;
-        left: 5%;
-    }
-
-    .m3 {
-        display: block;
-        left: 5%;
-    }
-
-    .m4 {
-        display: block;
-        left: 5%;
-    }
-
-    .m5 {
-        display: block;
-        left: 5%;
-    }
-
-    .m6 {
-        display: block;
-        left: 5%;
-    }
-
-    .m7 {
-        display: block;
-        left: 5%;
-    }
-
-    .m8 {
-        display: block;
-        left: 5%;
-    }
-
-    .m9 {
-        display: block;
-        left: 5%;
-    }
-
-    .m10 {
-        display: block;
-        left: 5%;
-    }
-
-    .cursos__details--btn {
+    .submenu-btn{
         display: block;
     }
-
+    .submenu{
+        display: block;
+        height: 0;
+        overflow: hidden;
+        background-color: green;
+        transition: all .3s;
+    }
 }

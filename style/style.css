@@ -105,7 +105,14 @@ body {
   text-decoration: none;
   font-weight: 600;
   color: white;
+  cursor: pointer;
   background-color: #ff3c3c;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header__contactanos:hover {
+  background-color: #3d313b;
 }
 
 @media only screen and (max-width: 964px) {
@@ -219,7 +226,8 @@ body {
   height: auto;
   min-width: 290px;
   margin: 0 auto;
-  background-color: #f4f5ea;
+  color: #f4f5ea;
+  background-color: #3d313b;
 }
 
 .alcance > *:nth-child(1) {
@@ -317,7 +325,7 @@ body {
   min-width: 290px;
   margin: 0 auto;
   height: 100vh;
-  background-color: #3d313b;
+  background-color: #f4f5ea;
 }
 
 .cursos__left {
@@ -325,7 +333,6 @@ body {
   width: 50%;
   height: 100vh;
   padding: 0 5%;
-  background-color: skyblue;
 }
 
 .cursos__left--title {
@@ -361,7 +368,7 @@ body {
   border-radius: 15px;
   border: none;
   text-decoration: none;
-  color: #3d313b;
+  color: #f4f5ea;
   background-color: #ff3c3c;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -374,7 +381,6 @@ body {
   width: 50%;
   height: 100vh;
   border-radius: 10px;
-  background-color: #ff3c3c;
 }
 
 .cursos__details--title {
@@ -423,7 +429,15 @@ body {
   height: 85%;
   width: 90%;
   font-size: 1.6rem;
-  background-color: green;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.submenu-btn {
+  display: none;
+}
+
+.submenu {
+  display: none;
 }
 
 @media only screen and (max-width: 964px) {
@@ -458,69 +472,19 @@ body {
   }
 
   .cursos__details {
-    position: absolute;
-    -webkit-transform: translateY(-95%) scaleY(0);
-            transform: translateY(-95%) scaleY(0);
-    -webkit-transition: 1s;
-    transition: 1s;
+    display: none;
   }
 
-  .cursos__contain--item1:hover ~ .cursos__details {
-    -webkit-transform: translateY(0) scaleY(1);
-            transform: translateY(0) scaleY(1);
-  }
-
-  .m1 {
+  .submenu-btn {
     display: block;
-    left: 5%;
   }
 
-  .m2 {
+  .submenu {
     display: block;
-    left: 5%;
-  }
-
-  .m3 {
-    display: block;
-    left: 5%;
-  }
-
-  .m4 {
-    display: block;
-    left: 5%;
-  }
-
-  .m5 {
-    display: block;
-    left: 5%;
-  }
-
-  .m6 {
-    display: block;
-    left: 5%;
-  }
-
-  .m7 {
-    display: block;
-    left: 5%;
-  }
-
-  .m8 {
-    display: block;
-    left: 5%;
-  }
-
-  .m9 {
-    display: block;
-    left: 5%;
-  }
-
-  .m10 {
-    display: block;
-    left: 5%;
-  }
-
-  .cursos__details--btn {
-    display: block;
+    height: 0;
+    overflow: hidden;
+    background-color: green;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 }

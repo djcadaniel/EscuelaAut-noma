@@ -56,7 +56,12 @@
     text-decoration: none;
     font-weight: 600;
     color: $colorTexto--light;
+    cursor: pointer;
     background-color: $red;
+    transition: all .5s;
+}
+.header__contactanos:hover{
+    background-color: $black;
 }
 
 @media only screen and(max-width:964px) {
