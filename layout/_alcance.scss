@@ -81,3 +81,9 @@
         margin: 0;
     }
 }
+
+@media only screen and (max-width:524px) {
+    .alcance__title {
+        font-size: 2.7rem;
+    }
+}

@@ -3,15 +3,36 @@
 \*-------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
 .chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
-  top: 90%;
-  left: 95%;
+  top: 86%;
+  left: 94%;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: green;
   z-index: 50;
 }
 
+.chat a {
+  display: block;
+}
+
 .chat a i {
-  font-size: 5.5rem;
-  color: #ff3c3c;
+  font-size: 5rem;
+  color: #f4f5ea;
 }
 
 .chat a i:hover {
@@ -21,25 +42,35 @@
 @media only screen and (max-width: 964px) {
   .chat {
     position: fixed;
-    top: 88%;
-    left: 93%;
+    top: 86%;
+    left: 92%;
+    width: 65px;
+    height: 65px;
     z-index: 50;
   }
 
   .chat a i {
-    font-size: 5.5rem;
-    color: #0eee46;
-  }
-
-  .chat a i:hover {
-    color: #ff3c3c;
+    font-size: 4.5rem;
   }
 }
 @media only screen and (max-width: 524px) {
   .chat {
     position: fixed;
-    top: 88%;
-    left: 89%;
+    top: 87%;
+    left: 87%;
+    width: 60px;
+    height: 60px;
+    font-size: 3rem;
+    z-index: 50;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .chat {
+    position: fixed;
+    top: 89%;
+    left: 85%;
+    width: 55px;
+    height: 55px;
     z-index: 50;
   }
 }
@@ -417,6 +448,11 @@ body {
     margin: 0;
   }
 }
+@media only screen and (max-width: 524px) {
+  .alcance__title {
+    font-size: 2.7rem;
+  }
+}
 .cursos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,6 +660,11 @@ body {
     transition: all 0.3s;
   }
 }
+@media only screen and (max-width: 524px) {
+  .cursos__title {
+    font-size: 2.7rem;
+  }
+}
 .newCursos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -707,6 +748,10 @@ body {
     margin: 0 auto;
     margin-left: 0%;
     margin-top: -10%;
+  }
+
+  .newCursos__title {
+    font-size: 2.7rem;
   }
 }
 .carreras {
@@ -861,5 +906,9 @@ body {
   .carreras__right {
     width: 100%;
     margin: 0;
+  }
+
+  .carreras__title {
+    font-size: 2.7rem;
   }
 }

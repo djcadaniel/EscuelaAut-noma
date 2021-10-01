@@ -1,13 +1,22 @@
 .chat {
+    @include flex-fila;
     position: fixed;
-    top: 90%;
-    left: 95%;
+    top: 86%;
+    left: 94%;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: $green;
     z-index: $whatsapp;
 }
 
+.chat a {
+    display: block;
+}
+
 .chat a i {
-    font-size: 5.5rem;
-    color: $red;
+    font-size: 5rem;
+    color: $white;
 }
 
 .chat a i:hover {
@@ -17,26 +26,37 @@
 @media only screen and (max-width:964px) {
     .chat {
         position: fixed;
-        top: 88%;
-        left: 93%;
+        top: 86%;
+        left: 92%;
+        width: 65px;
+        height: 65px;
         z-index: $whatsapp;
     }
 
     .chat a i {
-        font-size: 5.5rem;
-        color: rgba($color: #0eee46, $alpha: 1.0);
-    }
-
-    .chat a i:hover {
-        color: $red;
+        font-size: 4.5rem;
     }
 }
 
 @media only screen and (max-width:524px) {
     .chat {
         position: fixed;
-        top: 88%;
-        left: 89%;
+        top: 87%;
+        left: 87%;
+        width: 60px;
+        height: 60px;
+        font-size: 3rem;
+        z-index: $whatsapp;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .chat {
+        position: fixed;
+        top: 89%;
+        left: 85%;
+        width: 55px;
+        height: 55px;
         z-index: $whatsapp;
     }
 }

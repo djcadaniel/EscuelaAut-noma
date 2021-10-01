@@ -158,3 +158,9 @@
         transition: all .3s;
     }
 }
+
+@media only screen and (max-width:524px) {
+    .cursos__title {
+        font-size: 2.7rem;
+    }
+}
