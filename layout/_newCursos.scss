@@ -1,0 +1,72 @@
+.newCursos {
+    @include flex-fila;
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100vh - 110px);
+    min-width: 290px;
+    margin: 0 auto;
+    background-color: $black;
+}
+
+.newCursos__title {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1% 0;
+    color: $red;
+}
+
+/*====SPLIDE====*/
+.newCursos__splide {
+    top: 0;
+    width: 100%;
+    height: calc(100vh - 140px);
+}
+
+.newCursos__img {
+    height: calc(100vh - 140px);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.newCursos__track {
+    margin: 0 auto;
+}
+
+.newCursos__lista {
+    margin: 0;
+    text-align: center;
+}
+
+.newCursos__img img {
+    width: 100vh;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-left: 55%;
+    margin-top: -10%;
+
+}
+
+@media only screen and (max-width:768px) {
+    .newCursos__img img {
+        width: 100vh;
+        object-fit: contain;
+        margin: 0 auto;
+        margin-left: 23%;
+        margin-top: -10%;
+
+    }
+}
+
+@media only screen and (max-width:528px) {
+    .newCursos__img img {
+        max-width: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+        margin-left: 0%;
+        margin-top: -10%;
+
+    }
+}

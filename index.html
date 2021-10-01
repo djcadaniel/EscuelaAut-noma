@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/splide/splide.min.css">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <title>Escuela Autónoma</title>
+
 </head>
 
 <body>
     <header class="header">
-        <img class="header__logo" src="./src/img/logo.png" alt="Logo de la escuela autónoma">
+        <a href="index.html"><img class="header__logo" src="./src/img/logo.png" alt="Logo de la escuela autónoma"></a>
         <button class="header__button">
             <div class="line"></div>
             <div class="line"></div>
@@ -20,15 +21,18 @@
         </button>
         <nav class="header__menu">
             <ul class="header__ul">
-                <li class="header__ul--item"><a href="">Inicio</a></li>
-                <li class="header__ul--item"><a href="">Nosotros</a></li>
-                <li class="header__ul--item"><a href="">Diplomados/Especializaciones</a></li>
-                <li class="header__ul--item"><a href="">Carreras Técnicas</a></li>
+                <li class="header__ul--item header__ul--li1"><a href="index.html">Inicio</a></li>
+                <li class="header__ul--item header__ul--li2"><a href="#nosotros">Nosotros</a></li>
+                <li class="header__ul--item header__ul--li3"><a href="#diplomados">Diplomados/Especializaciones</a></li>
+                <li class="header__ul--item header__ul--li4 "><a href="#carreras">Carreras Técnicas</a></li>
             </ul>
         </nav>
         <a href="./src/documentos/informe.pdf" class="header__contactanos" download="Informe de Escuela Autónoma" target="_blank">Más informes</a>
     </header>
-    <main class="main">
+    <main class="main" id="#inicio">
+        <section class="chat">
+            <a href="https://api.whatsapp.com/send?phone=+51 946255377&text=Hola,%20Escuela%20de%20Diplomados" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </section>
         <section class="main__hero">
             <div class="splide">
                 <div class="splide__track">
@@ -61,7 +65,7 @@
                 </div>
             </div>
         </section>
-        <section class="alcance">
+        <section class="alcance" id="nosotros">
             <h1 class="alcance__title">NOSOTROS</h1>
             <article class="alcance__vision">
                 <h1 class="alcance__vision--title">VISIÓN</h1><br>
@@ -117,7 +121,7 @@
                 </ol>
             </article>
         </section>
-        <section class="cursos">
+        <section class="cursos" id="diplomados">
             <h1 class="cursos__title">
                 DIPLOMADOS / <br>ESPECIALIZACIONES
             </h1><br>
@@ -136,59 +140,75 @@
                     </ul>
                     <button class="cursos__contain--item2 submenu-btn" type="submit">Agricultura</button>
                     <ul class="submenu">
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
+                        <li>1. Cultivo de Flores y plantas ornamentales</li>
+                        <li>2. Manejo integrado de control de plagas</li>
+                        <li>3. Reforestación y agroforestería</li>
+                        <li>4. Técnicas de explotación agrícola</li>
+                        <li>5. Técnicas de jardinería</li>
+                        <li>6. Control del plagas</li>
+                        <li>7. Avicultura</li>
                     </ul>
                     <button class="cursos__contain--item3 submenu-btn" type="submit">Alimentos</button>
                     <ul class="submenu">
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
+                        <li>1. Control de calidad</li>
+                        <li>2. Tecnología de añimentos</li>
+                        <li>3. Inocuidad alimentaria</li>
+                        <li>4. Industria manufacturera</li>
+                        <li>5. Nutrición</li>
+                        <li>6. Toxicología de alimentos</li>
                     </ul>
                     <button class="cursos__contain--item4 submenu-btn" type="submit">Archivo y Biblioteconomía</button>
                     <ul class="submenu">
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
+                        <li>1. Administración de archivos</li>
+                        <li>2. Administración de bibliotecas</li>
+                        <li>3. Gerencia bibliotecaria</li>
+                        <li>4. Gerencia de bibliotecas</li>
+                        <li>5. Archivo clínico</li>
+                        <li>6. Gestión documental</li>
+                        <li>7. Tecnología de archivos</li>
                     </ul>
                     <button class="cursos__contain--item5 submenu-btn" type="submit">Patrimonios Cultural</button>
                     <ul class="submenu">
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
+                        <li>1. Gestión de Museos</li>
+                        <li>2. Arqueología y patrimonio</li>
+                        <li>3. Gestión de patrimonio arqueológico</li>
+                        <li>4. Gestión del patrimonio cultural</li>
+                        <li>5. Museología</li>
                     </ul>
                     <button class="cursos__contain--item6 submenu-btn" type="submit">Asuntos penitenciarios</button>
                     <ul class="submenu">
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
+                        <li>1. Beneficios penitenciarios</li>
+                        <li>2. Gerencia de establecimientos penitenciarios</li>
+                        <li>3. Salud mental en establecimientos penitenciarios</li>
+                        <li>4. Salud física en establecimientos penitenciarios</li>
+                        <li>5. Seguridad en Salud mental en establecimientos penitenciarios</li>
+                        <li>6. Seguridad penitenciaria</li>
                     </ul>
                     <button class="cursos__contain--item7 submenu-btn" type="submit">Docencia</button>
                     <ul class="submenu">
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
+                        <li>1. Auxiliar en educación inicial</li>
+                        <li>2. Auxiliar en educación primaria</li>
+                        <li>3. Auxiliar en educación secundaria</li>
+                        <li>4. Docencia en educación inicial</li>
+                        <li>5. Docencia en educación primaria</li>
+                        <li>6. Docencia en educación secundaria</li>
+                        <li>7. Educación por el arte</li>
+                        <li>8. Y más</li>
                     </ul>
                     <button class="cursos__contain--item8 submenu-btn" type="submit">Estimulación Temprana</button>
                     <ul class="submenu">
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
+                        <li>1. Estimulación del bebé antes de nacer</li>
+                        <li>2. Estimulación del bebé intraútero</li>
+                        <li>3. Estimulación prenatal</li>
                     </ul>
                     <button class="cursos__contain--item9 submenu-btn" type="submit">Sistemas de Información</button>
                     <ul class="submenu">
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
-                        <li>sadsd</li>
+                        <li>1. Administración de sistemas informáticos</li>
+                        <li>2. Gerencia de sistemas informáticos</li>
+                        <li>3. Informática y microcomputación</li>
+                        <li>4. Ingeniería de sistemas</li>
+                        <li>5. Ofimática</li>
+                        <li>6. Sistemas de informacoón gerencial</li>
                     </ul>
                     <button class="cursos__contain--item10 submenu-btn" type="submit" onclick="window.open('./src/documentos/informe.pdf')">Otros</button>
                 </ul>
@@ -204,12 +224,101 @@
                 </div>
             </article>
         </section>
+        <section class="newCursos">
+            <h1 class="newCursos__title">NUEVOS CURSOS</h1>
+            <div class="newCursos__splide splide">
+                <div class="splide__track newCursos__track">
+                    <ul class="splide__list newCursos__lista">
+                        <li class="splide__slide newCursos__img">
+                            <img src="./src/img/publi/1.png"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="carreras" id="carreras">
+            <h1 class="carreras__title">
+                CARRERA TÉCNICAS
+            </h1>
+            <div class="carreras__left">
+                <ul>
+                    <li>
+                        <div class="carreras__left--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__left--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__left--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__left--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__left--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__left--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                </ul>
+            </div>
+            <div class="carreras__right">
+                <ul>
+                    <li>
+                        <div class="carreras__right--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__right--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__right--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__right--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__right--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                    <li>
+                        <div class="carreras__right--circle">
+                            <p>✔</p>    
+                        </div> dfgdf
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="convenios">
+
+        </section>
+        <section class="footer">
+        </section>
     </main>
     <script src="./js/splide/splide.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/curso.js"></script>
-    <script src="./js/cursoResponsive.js"></script>
 </body>
 
 </html>

@@ -3,8 +3,12 @@
 @import "lib/mixins";
 
 //Elementos base
+@import "layout/chat";
+@import "layout/animations";
 @import "layout/body";
 @import "layout/header";
 @import "layout/hero";
 @import "layout/alcance";
 @import "layout/cursos";
+@import "layout/newCursos";
+@import "layout/carreras";

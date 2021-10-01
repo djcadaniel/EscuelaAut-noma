@@ -1,0 +1,42 @@
+.chat {
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    z-index: $whatsapp;
+}
+
+.chat a i {
+    font-size: 5.5rem;
+    color: $red;
+}
+
+.chat a i:hover {
+    color: rgba($color: #0eee46, $alpha: 1.0);
+}
+
+@media only screen and (max-width:964px) {
+    .chat {
+        position: fixed;
+        top: 88%;
+        left: 93%;
+        z-index: $whatsapp;
+    }
+
+    .chat a i {
+        font-size: 5.5rem;
+        color: rgba($color: #0eee46, $alpha: 1.0);
+    }
+
+    .chat a i:hover {
+        color: $red;
+    }
+}
+
+@media only screen and (max-width:524px) {
+    .chat {
+        position: fixed;
+        top: 88%;
+        left: 89%;
+        z-index: $whatsapp;
+    }
+}

@@ -43,12 +43,25 @@
     padding: 0 15px;
     font-weight: bold;
     border-right: 2px solid $black;
+    transition: all .4s;
+    ;
 }
 
 .header__ul--item a {
     text-decoration: none;
     font-weight: 500;
     color: $black;
+    transition: all .4s;
+    ;
+}
+
+.header__ul--item:hover {
+    border-radius: 10px;
+    background-color: $black;
+}
+
+.header__ul--item a:hover {
+    color: $white;
 }
 
 .header__contactanos {

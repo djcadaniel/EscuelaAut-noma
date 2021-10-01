@@ -42,7 +42,7 @@
 }
 
 .splide {
-    visibility: hidden
+    /* visibility: hidden */
 }
 
 .splide,
@@ -85,7 +85,7 @@
 .splide__track {
     position: relative;
     z-index: 0;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .splide--draggable>.splide__track>.splide__list>.splide__slide {

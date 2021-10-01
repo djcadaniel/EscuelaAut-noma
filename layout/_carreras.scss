@@ -1,0 +1,109 @@
+.carreras {
+    @include flex-fila;
+    width: 100%;
+    min-width: 290px;
+    margin: 0 auto;
+    padding: 3%;
+    background-color: $white;
+}
+
+.carreras__title {
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 2%;
+    color: $red;
+}
+
+.carreras__left {
+    width: 35%;
+    margin-right: 2%;
+}
+
+.carreras__left ul {
+    list-style: none;
+}
+
+.carreras__left ul li {
+    position: relative;
+    margin-bottom: 13px;
+    padding: 4% 0;
+    border-radius: 30px;
+    text-align: center;
+    color: $white;
+    background-color: $red;
+
+}
+
+.carreras__right {
+    width: 35%;
+    margin-left: 2%;
+}
+
+.carreras__right ul {
+    list-style: none;
+}
+
+.carreras__right ul li {
+    position: relative;
+    margin-bottom: 13px;
+    padding: 4% 0;
+    border-radius: 30px;
+    text-align: center;
+    color: $white;
+    background-color: $red;
+}
+
+.carreras__left--circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border-radius: 30px;
+    height: 100%;
+    width: 13%;
+    border: 5px solid white;
+    background-color: $black;
+    @include flex-fila;
+    justify-content: center;
+    align-items: center;
+}
+
+.carreras__right--circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border-radius: 30px;
+    height: 100%;
+    width: 13%;
+    border: 5px solid white;
+    background-color: $black;
+    @include flex-fila;
+    justify-content: center;
+    align-items: center;
+}
+
+.carreras__left--circle p {}
+
+@media only screen and (max-width:528px) {
+    .carreras {
+        @include flex-fila;
+        width: 100%;
+        min-width: 290px;
+        margin: 0 auto;
+        padding: 3%;
+        background-color: $white;
+    }
+
+    .carreras__left {
+        width: 100%;
+        margin: 0;
+    }
+
+    .carreras__right {
+        width: 100%;
+        margin: 0;
+    }
+}

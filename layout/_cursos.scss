@@ -68,9 +68,20 @@
 
 .cursos__details--img {
     position: absolute;
+    width: 100%;
     top: 40%;
-    left: 30%;
+    left: 0;
 }
+
+.cursos__details--img img {
+    position: absolute;
+    animation-name: rutita;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
 
 .borrarCurso {
     color: red;
