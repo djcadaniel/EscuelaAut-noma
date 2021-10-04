@@ -1,18 +1,18 @@
-const contedorInfo =document.querySelector('.curso__details--text')
+const contedorInfo = document.querySelector('.curso__details--text')
 const contenedorPadre = document.querySelector('.cursos__details')
 const buttonCerrar = document.querySelector('.cursos__details--btn')
 
 const subMenuBtn = document.querySelectorAll('.submenu-btn')
-for(let i=0; i<subMenuBtn.length;i++){
-    subMenuBtn[i].addEventListener('click', function(){
-        if(window.innerWidth < 964){
+for (let i = 0; i < subMenuBtn.length; i++) {
+    subMenuBtn[i].addEventListener('click', function () {
+        if (window.innerWidth < 964) {
             const subMenu = this.nextElementSibling;
             const height = subMenu.scrollHeight;
 
-            if(subMenu.classList.contains('desplegar')){
+            if (subMenu.classList.contains('desplegar')) {
                 subMenu.classList.remove('desplegar');
                 subMenu.removeAttribute('style');
-            }else{
+            } else {
                 subMenu.classList.add('desplegar')
                 subMenu.style.height = height + "px";
             }
@@ -20,11 +20,10 @@ for(let i=0; i<subMenuBtn.length;i++){
     })
 }
 
-const cursos = [
-    {
-        id:1,
-        title:'<br> Administración y Alta Dirección General<br>',
-        contenido:`
+const cursos = [{
+        id: 1,
+        title: '<br> Administración y Alta Dirección General<br>',
+        contenido: `
         1. Administración de empresas <br>
         2. Administración de pequeñas empresas <br>
         3. Administración estratégica <br>
@@ -35,9 +34,9 @@ const cursos = [
         `
     },
     {
-        id:2,
-        title:'<br>Agricultura<br>',
-        contenido:`
+        id: 2,
+        title: '<br>Agricultura<br>',
+        contenido: `
         1. Cultivo de Flores y plantas ornamentales<br>
         2. Manejo integrado de control de plagas <br>
         3. Reforestación y agroforestería <br>
@@ -48,9 +47,9 @@ const cursos = [
         `
     },
     {
-        id:3,
-        title:'<br>Alimentos<br>',
-        contenido:`
+        id: 3,
+        title: '<br>Alimentos<br>',
+        contenido: `
         1. Control de calidad <br>
         2. Tecnología de añimentos <br>
         3. Inocuidad alimentaria <br>
@@ -60,9 +59,9 @@ const cursos = [
         `
     },
     {
-        id:4,
-        title:'<br>Archivo y Biblioteconomía<br>',
-        contenido:`
+        id: 4,
+        title: '<br>Archivo y Biblioteconomía<br>',
+        contenido: `
         1. Administración de archivos <br>
         2. Administración de bibliotecas <br>
         3. Gerencia bibliotecaria <br>
@@ -73,9 +72,9 @@ const cursos = [
         `
     },
     {
-        id:5,
-        title:'<br> Patrimonios Cultural<br>',
-        contenido:`
+        id: 5,
+        title: '<br> Patrimonios Cultural<br>',
+        contenido: `
         1. Gestión de Museos <br>
         2. Arqueología y patrimonio <br>
         3. Gestión de patrimonio arqueológico <br>
@@ -84,9 +83,9 @@ const cursos = [
         `
     },
     {
-        id:6,
-        title:'<br>Asuntos penitenciarios<br>',
-        contenido:`
+        id: 6,
+        title: '<br>Asuntos penitenciarios<br>',
+        contenido: `
         1. Beneficios penitenciarios <br>
         2. Gerencia de establecimientos penitenciarios <br>
         3. Salud mental en establecimientos penitenciarios <br>
@@ -96,9 +95,9 @@ const cursos = [
         `
     },
     {
-        id:7,
-        title:'<br>Docencia<br>',
-        contenido:`
+        id: 7,
+        title: '<br>Docencia<br>',
+        contenido: `
         1. Auxiliar en educación inicial <br>
         2. Auxiliar en educación primaria <br>
         3. Auxiliar en educación secundaria <br>
@@ -110,18 +109,18 @@ const cursos = [
         `
     },
     {
-        id:8,
-        title:'<br>Estimulación temprana<br>',
-        contenido:`
+        id: 8,
+        title: '<br>Estimulación temprana<br>',
+        contenido: `
         1. Estimulación del bebé antes de nacer <br>
         2. Estimulación del bebé intraútero <br>
         3. Estimulación prenatal <br>
         `
     },
     {
-        id:9,
-        title:'<br>Sistemas de Información<br>',
-        contenido:`
+        id: 9,
+        title: '<br>Sistemas de Información<br>',
+        contenido: `
         1. Administración de sistemas informáticos <br>
         2. Gerencia de sistemas informáticos <br>
         3. Informática y microcomputación <br>
@@ -144,48 +143,48 @@ const op7 = document.querySelector('.cursos__contain--item7');
 const op8 = document.querySelector('.cursos__contain--item8');
 const op9 = document.querySelector('.cursos__contain--item9');
 const op10 = document.querySelector('.cursos__contain--item10');
-const opciones = [op1,op2,op3,op4,op5,op6,op7,op8,op9,op10]
+const opciones = [op1, op2, op3, op4, op5, op6, op7, op8, op9, op10]
 
-const detalles = ()=>(
+const detalles = () => (
     contedorInfo.innerHTML = `${cursos[0].title} <br> ${cursos[0].contenido}`
 )
-const detalles2 = ()=>(
+const detalles2 = () => (
     contedorInfo.innerHTML = `${cursos[1].title} <br> ${cursos[1].contenido}`,
     contenedorPadre.classList.toggle('m2')
 )
-const detalles3 = ()=>(
+const detalles3 = () => (
     contedorInfo.innerHTML = `${cursos[2].title} <br> ${cursos[2].contenido}`,
     contenedorPadre.classList.toggle('m3')
 )
-const detalles4 = ()=>(
+const detalles4 = () => (
     contedorInfo.innerHTML = `${cursos[3].title} <br> ${cursos[3].contenido}`,
     contenedorPadre.classList.toggle('m4')
 )
-const detalles5 = ()=>(
+const detalles5 = () => (
     contedorInfo.innerHTML = `${cursos[4].title} <br> ${cursos[4].contenido}`,
     contenedorPadre.classList.toggle('m5')
 )
-const detalles6 = ()=>(
+const detalles6 = () => (
     contedorInfo.innerHTML = `${cursos[5].title} <br> ${cursos[5].contenido}`,
     contenedorPadre.classList.toggle('m6')
 )
-const detalles7 = ()=>(
+const detalles7 = () => (
     contedorInfo.innerHTML = `${cursos[6].title} <br> ${cursos[6].contenido}`,
     contenedorPadre.classList.toggle('m7')
 )
-const detalles8 = ()=>(
+const detalles8 = () => (
     contedorInfo.innerHTML = `${cursos[7].title} <br> ${cursos[7].contenido}`,
     contenedorPadre.classList.toggle('m8')
 )
-const detalles9 = ()=>(
+const detalles9 = () => (
     contedorInfo.innerHTML = `${cursos[8].title} <br> ${cursos[8].contenido}`,
     contenedorPadre.classList.toggle('m9')
 )
-const detalles10 = ()=>(
+const detalles10 = () => (
     contedorInfo.innerHTML = `${cursos[9].title} <br> ${cursos[9].contenido}`
 )
 
-switch(opciones){
+switch (opciones) {
     case opciones[0].addEventListener('click', detalles):
         break;
     case opciones[1].addEventListener('click', detalles2):

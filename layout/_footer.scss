@@ -19,7 +19,7 @@
 
 .footer__information {
     width: 33%;
-    padding: 0 2%;
+    padding-left: 10%;
     height: auto;
 }
 
@@ -31,6 +31,7 @@
     height: auto;
     padding: 0 2%;
     width: 33%;
+    padding-left: 6%;
 }
 
 .footer__contact--ul {
@@ -47,14 +48,90 @@
     justify-content: center;
     align-items: center;
     padding: 2% 0 0 0;
+    list-style: none
+}
+
+.footer__redes--ul li {
+    margin-right: 15px;
 }
 
 .footer__redes--ul li a i {
-    font-size: 1.6rem;
+    font-size: 4.5rem;
+    color: $red;
+}
+
+.footer__redes--ul li a i:hover {
     color: $white;
 }
 
 .footer__title {
     width: 100%;
     padding-bottom: 6%
+}
+
+.footer__right {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width:964px) {
+
+    .footer__about {
+        width: 44%;
+        padding: 0 2%;
+    }
+
+    .footer__information {
+        width: 23%;
+        padding-left: 1%;
+    }
+
+    .footer__contact {
+        width: 33%;
+        padding-left: 2%;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .footer__about {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .footer__information {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .footer__contact {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .footer__title {
+        padding-bottom: 1%;
+        text-align: center;
+        font-size: 2.4rem;
+        color: $red;
+    }
+
+    .footer__redes--ul li a i {
+        font-size: 4rem;
+        color: $red;
+    }
+}
+
+@media only screen and (max-width:528px) {
+    .footer__redes--ul li a i {
+        font-size: 3rem;
+        color: $red;
+    }
 }

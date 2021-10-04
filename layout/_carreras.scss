@@ -97,6 +97,10 @@
         background-color: $white;
     }
 
+    .carreras__title {
+        font-size: 2.4rem;
+    }
+
     .carreras__left {
         width: 100%;
         margin: 0;
@@ -105,9 +109,5 @@
     .carreras__right {
         width: 100%;
         margin: 0;
-    }
-
-    .carreras__title {
-        font-size: 2.7rem;
     }
 }

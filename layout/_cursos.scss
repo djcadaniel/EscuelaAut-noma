@@ -42,6 +42,12 @@
     transition: all .5s;
     cursor: pointer;
     font-size: 1.6rem;
+    transition: 1s all;
+}
+
+.cursos__contain button:hover {
+    color: $white;
+    background-color: $black;
 }
 
 .cursos__details {
@@ -159,8 +165,8 @@
     }
 }
 
-@media only screen and (max-width:524px) {
+@media only screen and (max-width:528px) {
     .cursos__title {
-        font-size: 2.7rem;
+        font-size: 2.4rem;
     }
 }
