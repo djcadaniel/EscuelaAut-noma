@@ -130,8 +130,20 @@
 }
 
 @media only screen and (max-width:528px) {
+    .footer{
+        padding: 7% 3%;
+    }
     .footer__redes--ul li a i {
         font-size: 3rem;
         color: $red;
+    }
+    .footer__about{
+        margin-bottom: 35px;
+    }
+    .footer__information{
+        margin-bottom: 35px;
+    }
+    .footer__contact{
+        margin-bottom: 35px;
     }
 }

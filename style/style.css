@@ -42,7 +42,7 @@
 @media only screen and (max-width: 964px) {
   .chat {
     position: fixed;
-    top: 86%;
+    top: 90%;
     left: 92%;
     width: 65px;
     height: 65px;
@@ -56,7 +56,7 @@
 @media only screen and (max-width: 524px) {
   .chat {
     position: fixed;
-    top: 87%;
+    top: 90%;
     left: 87%;
     width: 60px;
     height: 60px;
@@ -67,8 +67,8 @@
 @media only screen and (max-width: 400px) {
   .chat {
     position: fixed;
-    top: 89%;
-    left: 83%;
+    top: 92%;
+    left: 85%;
     width: 55px;
     height: 55px;
     z-index: 50;
@@ -328,19 +328,6 @@ body {
     height: calc(100vh - 80px);
   }
 }
-@media only screen and (max-width: 768px) {
-  .main {
-    margin: 80px auto 0 auto;
-  }
-
-  .main__hero {
-    height: calc(100vh - 80px);
-  }
-
-  .splide__slide img {
-    height: calc(100vh - 80px);
-  }
-}
 @media only screen and (max-width: 728px) {
   .main {
     margin: 80px auto 0 auto;
@@ -406,10 +393,26 @@ body {
   font-size: 2.5rem;
 }
 
+.alcance__imagen {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .alcance__imagen img {
-  width: 15vw;
-  min-width: 170px;
-  max-width: 250px;
+  width: 70%;
+  height: auto;
 }
 
 .alcance__mision {
@@ -461,6 +464,10 @@ body {
   }
 }
 @media only screen and (max-width: 524px) {
+  .alcance {
+    padding: 6% 3%;
+  }
+
   .alcance__title {
     font-size: 2.7rem;
   }
@@ -632,7 +639,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 964px) {
+@media only screen and (max-width: 963px) {
   .cursos {
     position: relative;
     height: auto;
@@ -676,14 +683,19 @@ body {
     height: 0;
     overflow: hidden;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 4%;
+    list-style: none;
     color: #f4f5ea;
     background-color: #1a1717;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
 }
-@media only screen and (max-width: 528px) {
+@media only screen and (max-width: 524px) {
+  .cursos {
+    padding: 3% 6%;
+  }
+
   .cursos__title {
     font-size: 2.4rem;
   }
@@ -804,6 +816,12 @@ body {
   }
 }
 @media only screen and (max-width: 586px) {
+  .newCursos {
+    width: 100%;
+    height: auto;
+    padding: 6% 3%;
+  }
+
   .carousel__item--img {
     height: 100%;
     max-height: 270px;
@@ -979,7 +997,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 528px) {
+@media only screen and (max-width: 524px) {
   .carreras {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -997,7 +1015,7 @@ body {
     width: 100%;
     min-width: 290px;
     margin: 0 auto;
-    padding: 3%;
+    padding: 6% 3%;
     background-color: #f4f5ea;
   }
 
@@ -1535,8 +1553,24 @@ body {
   }
 }
 @media only screen and (max-width: 528px) {
+  .footer {
+    padding: 7% 3%;
+  }
+
   .footer__redes--ul li a i {
     font-size: 3rem;
     color: #cf2830;
+  }
+
+  .footer__about {
+    margin-bottom: 35px;
+  }
+
+  .footer__information {
+    margin-bottom: 35px;
+  }
+
+  .footer__contact {
+    margin-bottom: 35px;
   }
 }
