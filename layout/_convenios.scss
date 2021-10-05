@@ -3,7 +3,7 @@
     min-width: 290px;
     margin: 0 auto;
     padding: 3%;
-    background-color: $black;
+    background-color: $white;
 }
 
 .convenios__title {
@@ -24,20 +24,20 @@
 
 .convenios__1 {
     grid-column-start: 1;
-    grid-column-end: 2;
-    margin-bottom: 60px;
+    grid-column-end: 3;
+    margin-bottom: 30px;
 }
 
 .convenios__2 {
     grid-column-start: 3;
     grid-column-end: 4;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .convenios__3 {
-    grid-column-start: 5;
+    grid-column-start: 4;
     grid-column-end: 6;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .convenios__4 {
@@ -50,32 +50,75 @@
     grid-column-end: 5;
 }
 
-.convenios__img {
-    width: 100%;
-    max-width: 180px;
-    max-height: 130px;
+.convenios__img1 {
+    width: 200px;
+}
+.convenios__img2 {
+    width: 180px;
+}
+.convenios__img3 {
+    width: 230px;
+}
+.convenios__img4 {
+    width: 350px;
+}
+.convenios__img5 {
+    width: 320px;
 }
 
-@media only screen and(max-width:964px) {
+@media only screen and(max-width:938px) {
+    .convenios__contain {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-top: 7%;
+    }
+
     .convenios__1 {
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 2;
         margin-bottom: 30px;
     }
 
     .convenios__2 {
-        grid-column-start: 3;
-        grid-column-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
         margin-bottom: 30px;
     }
 
     .convenios__3 {
-        grid-column-start: 4;
-        grid-column-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-bottom: 30px;
+    }
+    .convenios__4 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-bottom: 30px;
+    }
+    .convenios__5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
         margin-bottom: 30px;
     }
 }
-
+@media only screen and (max-width:768px) {
+    .convenios__img1 {
+        width: 170px;
+    }
+    .convenios__img2 {
+        width: 150px;
+    }
+    .convenios__img3 {
+        width: 200px;
+    }
+    .convenios__img4 {
+        width: 320px;
+    }
+    .convenios__img5 {
+        width: 290px;
+    }
+    
+}
 @media only screen and (max-width:528px) {
     .convenios__contain {
         grid-template-columns: repeat(2, 1fr);
@@ -110,6 +153,21 @@
     .convenios__5 {
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+    .convenios__img1 {
+        width: 110px;
+    }
+    .convenios__img2 {
+        width: 90px;
+    }
+    .convenios__img3 {
+        width: 140px;
+    }
+    .convenios__img4 {
+        width: 240px;
+    }
+    .convenios__img5 {
+        width: 240px;
     }
 }
 
@@ -150,9 +208,19 @@
         margin-bottom: 5px;
     }
 
-    .convenios__img {
-        width: 100%;
-        max-width: 140px;
-        max-height: 90px;
+    .convenios__img1 {
+        width: 140px;
+    }
+    .convenios__img2 {
+        width: 100px;
+    }
+    .convenios__img3 {
+        width: 180px;
+    }
+    .convenios__img4 {
+        width: 290px;
+    }
+    .convenios__img5 {
+        width: 240px;
     }
 }
