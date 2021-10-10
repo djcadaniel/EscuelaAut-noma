@@ -1,12 +1,13 @@
 .header {
     @include flex-fila;
-    @include anchoDisplay;
     position: fixed;
     top: 0;
+    left: 0%;
     justify-content: space-between;
     align-items: center;
     height: 110px;
     width: 100%;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0 20px;
     color: $white;

@@ -129,17 +129,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 2560px;
-  min-width: 320px;
-  margin: 0 auto;
   position: fixed;
   top: 0;
+  left: 0%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   align-items: center;
   height: 110px;
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
   color: #f4f5ea;
@@ -311,8 +310,6 @@ body {
 .splide__slide img {
   width: 100%;
   height: calc(100vh - 110px);
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media only screen and (max-width: 964px) {
@@ -394,7 +391,7 @@ body {
 }
 
 .alcance__imagen {
-  width: 100%;
+  max-width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,16 +491,11 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
+  height: auto;
   min-width: 290px;
   margin: 0 auto;
   padding: 3%;
   background-color: #f4f5ea;
-}
-
-.cursos__left {
-  position: relative;
-  width: 50%;
-  height: auto;
 }
 
 .cursos__title {
@@ -513,6 +505,25 @@ body {
   color: #cf2830;
   padding: 0;
   margin: 0;
+}
+
+.cursos__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: auto;
+  padding: 2% 0;
 }
 
 .cursos__contain {
@@ -533,13 +544,15 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 90vh;
+  width: 80%;
+  height: 100%;
 }
 
 .cursos__contain button {
   display: block;
   padding: 2%;
-  width: 70%;
+  width: 100%;
+  margin-bottom: 2%;
   border-radius: 15px;
   border: none;
   text-decoration: none;
@@ -583,7 +596,7 @@ body {
 .cursos__details--img {
   position: absolute;
   width: 100%;
-  top: 40%;
+  top: 50%;
   left: 0;
 }
 
@@ -625,9 +638,10 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 85%;
+  height: auto;
   width: 90%;
   font-size: 1.6rem;
+  padding-top: 10%;
   background-color: #1a1717;
 }
 
@@ -639,7 +653,22 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 963px) {
+@media only screen and (max-width: 2560px) {
+  .cursos__details {
+    height: 90vh;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .cursos__details {
+    height: 85vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .cursos__details {
+    height: 85vh;
+  }
+}
+@media only screen and (max-width: 964px) {
   .cursos {
     position: relative;
     height: auto;
@@ -701,26 +730,11 @@ body {
   }
 }
 .newCursos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   width: 100%;
-  height: calc(100vh - 110px);
+  height: auto;
   min-width: 290px;
   margin: 0 auto;
+  padding: 2%;
   background-color: #1a1717;
   -webkit-transition: all 450ms;
   transition: all 450ms;
@@ -737,57 +751,99 @@ body {
 }
 
 .newCursos__carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: scroll;
-  scrollbar-width: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 25px 1fr 25px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 25px 1fr 25px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 25px;
   width: 100%;
-  padding-bottom: 4%;
+  height: auto;
 }
 
-.newCursos__carousel::-webkit-scrollbar {
-  height: 10px;
-  background-color: #cf2830;
+.newCursos__carousel > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
 }
 
-.newCursos__carousel::-webkit-scrollbar-thumb {
-  border-radius: 15px;
-  background: rgba(244, 245, 234, 0.6);
+.newCursos__carousel > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.newCursos__carousel > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.newCursos__carousel > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.newCursos__carousel > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.newCursos__carousel > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.newCursos__carousel > *:nth-child(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.newCursos__carousel > *:nth-child(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.newCursos__carousel > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
 }
 
 .carousel__item {
+  width: 100%;
+  height: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 5%;
-  -webkit-transition: 450ms all;
-  transition: 450ms all;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.newCursos:hover .carousel__item {
+  opacity: 0.1;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.newCursos .carousel__item:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .carousel__item--img {
   height: 100%;
-  max-height: 330px;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .carousel__details {
   position: absolute;
-  top: 100%;
-  left: 85%;
+  top: 88%;
+  right: 0;
 }
 
 .carousel__details--btn {
   display: block;
   padding: 5px 15px;
   border: none;
-  border-radius: 6px;
+  border-radius: 6px 0px 6px 0px;
   margin-top: 5px;
   color: #f4f5ea;
   background-color: #cf2830;
@@ -796,12 +852,16 @@ body {
   transition: 0.5s all;
 }
 
-.newCursos__carousel .carousel__item:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.carousel__details--btn:hover {
+  background-color: #1a1717;
 }
 
+@media only screen and (max-width: 964px) {
+  .carousel__details {
+    position: absolute;
+    top: 81.8%;
+  }
+}
 @media only screen and (max-width: 820px) {
   .newCursos__carousel .carousel__item:hover {
     opacity: 1;
@@ -811,8 +871,65 @@ body {
 
   .carousel__details {
     position: absolute;
-    top: 93%;
-    left: 85%;
+    top: 79%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .newCursos__carousel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 25px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 25px;
+    width: 100%;
+    height: auto;
+  }
+  .newCursos__carousel > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .newCursos__carousel > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .newCursos__carousel > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .newCursos__carousel > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .newCursos__carousel > *:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .newCursos__carousel > *:nth-child(6) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+  .newCursos__carousel > *:nth-child(7) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .newCursos__carousel > *:nth-child(8) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+  }
+  .newCursos__carousel > *:nth-child(9) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .newCursos__carousel > *:nth-child(10) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+  }
+
+  .carousel__details {
+    position: absolute;
+    top: 85%;
   }
 }
 @media only screen and (max-width: 586px) {
@@ -827,6 +944,63 @@ body {
     max-height: 270px;
   }
 
+  .newCursos__carousel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 25px;
+    width: 100%;
+    height: auto;
+  }
+
+  .newCursos__carousel > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .newCursos__carousel > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .newCursos__carousel > *:nth-child(3) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .newCursos__carousel > *:nth-child(4) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+
+  .newCursos__carousel > *:nth-child(5) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+
+  .newCursos__carousel > *:nth-child(6) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+  }
+
+  .newCursos__carousel > *:nth-child(7) {
+    -ms-grid-row: 13;
+    -ms-grid-column: 1;
+  }
+
+  .newCursos__carousel > *:nth-child(8) {
+    -ms-grid-row: 15;
+    -ms-grid-column: 1;
+  }
+
+  .newCursos__carousel > *:nth-child(9) {
+    -ms-grid-row: 17;
+    -ms-grid-column: 1;
+  }
+
   .newCursos__carousel .carousel__item:hover {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -835,8 +1009,7 @@ body {
 
   .carousel__details {
     position: absolute;
-    top: 93%;
-    left: 81%;
+    top: 87%;
   }
 }
 @media only screen and (max-width: 468px) {
@@ -847,8 +1020,7 @@ body {
 
   .carousel__details {
     position: absolute;
-    top: 87%;
-    left: 77%;
+    top: 85%;
   }
 }
 @media only screen and (max-width: 414px) {
@@ -859,8 +1031,7 @@ body {
 
   .carousel__details {
     position: absolute;
-    top: 85%;
-    left: 74%;
+    top: 83%;
   }
 }
 @media only screen and (max-width: 358px) {
@@ -871,8 +1042,7 @@ body {
 
   .carousel__details {
     position: absolute;
-    top: 83%;
-    left: 70%;
+    top: 81%;
   }
 }
 .carreras {

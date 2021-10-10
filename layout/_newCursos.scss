@@ -1,10 +1,9 @@
 .newCursos {
-    @include flex-fila;
-    align-items: flex-start;
     width: 100%;
-    height: calc(100vh - 110px);
+    height: auto;
     min-width: 290px;
     margin: 0 auto;
+    padding: 2%;
     background-color: $black;
     transition: all 450ms;
 }
@@ -20,51 +19,60 @@
 }
 
 .newCursos__carousel {
-    display: flex;
-    overflow-x: scroll;
-    scrollbar-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 25px;
     width: 100%;
-    padding-bottom: 4%;
-}
-.newCursos__carousel::-webkit-scrollbar{
-    height: 10px;
-    background-color: $red;
-}
-.newCursos__carousel::-webkit-scrollbar-thumb{
-    border-radius: 15px;
-    background:rgba($white, .6)
+    height: auto;
 }
 
 .carousel__item {
+    width: 100%;
+    height: 100%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
-    transition: 450ms all;
+    transition: 1s all;
 }
+
+.newCursos:hover .carousel__item {
+    opacity: 0.1;
+    transform-origin: center;
+}
+
+.newCursos .carousel__item:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
 
 .carousel__item--img {
     height: 100%;
-    max-height: 330px;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .carousel__details {
     position: absolute;
-    top: 100%;
-    left: 85%;
+    top: 88%;
+    right: 0;
 }
-.carousel__details--btn{
+
+.carousel__details--btn {
     display: block;
     padding: 5px 15px;
     border: none;
-    border-radius: 6px;
+    border-radius: 6px 0px 6px 0px;
     margin-top: 5px;
     color: $white;
-    background-color:$red;
+    background-color: $red;
     cursor: pointer;
     transition: .5s all;
 }
+
+.carousel__details--btn:hover {
+    background-color: $black;
+}
+
 // .carousel__details--btn:hover{
 //     background-color: $white;
 //     color: $red;
@@ -74,72 +82,107 @@
 //     opacity: .2;
 // }
 
-.newCursos__carousel .carousel__item:hover{
-    opacity:1;
-    transform: scale(1.1);
-}
-@media only screen and(max-width:820px){
+@media only screen and(max-width:964px) {
 
-    .newCursos__carousel .carousel__item:hover{
-        opacity:1;
-        transform: scale(1);
-    }
     .carousel__details {
         position: absolute;
-        top: 93%;
-        left: 85%;
+        top: 81.8%;
     }
 }
-@media only screen and(max-width:586px){
+
+@media only screen and(max-width:820px) {
+
+    .newCursos__carousel .carousel__item:hover {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .carousel__details {
+        position: absolute;
+        top: 79%;
+    }
+}
+
+@media only screen and(max-width:768px) {
+    .newCursos__carousel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 25px;
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel__details {
+        position: absolute;
+        top: 85%;
+    }
+}
+
+@media only screen and(max-width:586px) {
     .newCursos {
         width: 100%;
         height: auto;
         padding: 6% 3%;
     }
+
     .carousel__item--img {
         height: 100%;
         max-height: 270px;
-    }   
-    .newCursos__carousel .carousel__item:hover{
-        opacity:1;
+    }
+
+    .newCursos__carousel {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-gap: 25px;
+        width: 100%;
+        height: auto;
+    }
+
+    .newCursos__carousel .carousel__item:hover {
+        opacity: 1;
         transform: scale(1);
     }
-    .carousel__details {
-        position: absolute;
-        top: 93%;
-        left: 81%;
-    }
-}
-@media only screen and(max-width:468px){
-    .carousel__item--img {
-        height: 100%;
-        max-height: 220px;
-    }   
+
     .carousel__details {
         position: absolute;
         top: 87%;
-        left: 77%;
     }
 }
-@media only screen and(max-width:414px){
+
+@media only screen and(max-width:468px) {
     .carousel__item--img {
         height: 100%;
-        max-height: 190px;
-    }   
+        max-height: 220px;
+    }
+
     .carousel__details {
         position: absolute;
         top: 85%;
-        left: 74%;
     }
 }
-@media only screen and(max-width:358px){
+
+@media only screen and(max-width:414px) {
     .carousel__item--img {
         height: 100%;
-        max-height: 170px;
-    }  
+        max-height: 190px;
+    }
+
     .carousel__details {
         position: absolute;
         top: 83%;
-        left: 70%;
-    } 
+    }
+}
+
+@media only screen and(max-width:358px) {
+    .carousel__item--img {
+        height: 100%;
+        max-height: 170px;
+    }
+
+    .carousel__details {
+        position: absolute;
+        top: 81%;
+    }
 }

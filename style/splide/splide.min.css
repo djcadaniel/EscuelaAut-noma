@@ -16,8 +16,9 @@
 .splide__list {
     margin: 0 !important;
     padding: 0 !important;
-    width: -webkit-max-content;
-    width: max-content;
+    /* width: -webkit-max-content;
+    width: max-content; */
+    width: 100%;
     will-change: transform
 }
 
