@@ -33,7 +33,9 @@
     background-color: $black;
 }
 
-.header__menu {}
+.header__menu {
+    color: $black;
+}
 
 .header__ul {
     @include flex-fila;
@@ -57,6 +59,10 @@
     border-bottom: 2px solid $black;
 }
 
+.header__ul--catalogo {
+    display: none;
+}
+
 .header__contactanos {
     padding: 1%;
     border-radius: 10px;
@@ -72,7 +78,7 @@
     background-color: $black;
 }
 
-@media only screen and(max-width:964px) {
+@media only screen and(max-width:963px) {
     .header {
         height: 80px;
         background-color: $white;
@@ -109,7 +115,19 @@
         justify-content: space-evenly;
     }
 
+    .header__ul--item {
+        color: $white;
+    }
+
     .header__ul--item a {
+        color: $white;
+    }
+
+    .header__ul--catalogo {
+        display: block;
+        padding: 2% 5%;
+        border-radius: 15px;
+        background-color: $red;
         color: $white;
     }
 
